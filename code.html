@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is this for?</title>
+    <embed src="assets/Hi Hi Hi.mp3" loop= "true" autostart="true" width="0" height="0">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url("assets/1200px-Flag_of_Israel.svg.png");
+          background-size: 1400px 750px;
+        }
+        </style>
+          <center><form>
+                  <label for="pswd"> </label>
+            <input type="password" id="pswd">
+            <input type="button" value="Submit" onclick="checkPswd();" />
+        </form>
+    </center>
+        <!--Function to check password the already set password is admin-->
+        <script type="text/javascript">
+            function checkPswd() {
+                var confirmPassword = "August";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                     window.location="based.html";
+                }
+                else{
+                    window.location="index.html";
+                    
+                }
+            }
+        </script>
+</body>
+</html>
